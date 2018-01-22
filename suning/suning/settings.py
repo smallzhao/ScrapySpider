@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for yangguang project
+# Scrapy settings for suning project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,16 +9,16 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'yangguang'
+BOT_NAME = 'suning'
 
-SPIDER_MODULES = ['yangguang.spiders']
-NEWSPIDER_MODULE = 'yangguang.spiders'
+SPIDER_MODULES = ['suning.spiders']
+NEWSPIDER_MODULE = 'suning.spiders'
 
 
-LOG_LEVEL = "WARNING"
+# LOG_LEVEL = "WARNING"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36Upgrade-Insecure-Requests: 1"
+USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -49,13 +49,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'yangguang.middlewares.YangguangSpiderMiddleware': 543,
+#    'suning.middlewares.SuningSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'yangguang.middlewares.YangguangDownloaderMiddleware': 543,
+#    'suning.middlewares.SuningDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -67,7 +67,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'yangguang.pipelines.YangguangPipeline': 300,
+   'suning.pipelines.SuningPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

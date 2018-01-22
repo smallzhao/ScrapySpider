@@ -33,7 +33,7 @@ class YgrexianSpider(scrapy.Spider):
 
     def parse_detail(self, response):
         item = response.meta["item"]
-        item["content"] = response.xpath("//div[@class='c1 text14_2']//text()").extract_first()
+        item["content"] = response.xpath("//div[@class='c1 text14_2']//text()").extract()
         item["content_img"] = response.xpath("//div[@class='c1 text14_2']//img/@src").extract()
         item["content_img"] = ["http://wz.sun0769.com"+i for i in item["content_img"]]
 
